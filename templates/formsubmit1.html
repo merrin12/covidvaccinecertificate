@@ -1,0 +1,88 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OTP Verification</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/mobile-form.css' %}">
+
+
+</head>
+<body class="bg img-responsive">
+
+<img src="{% static 'images/crtfcte.png' %}" class="img-responsive" style="position:relative; padding-top:70px; padding-bottom:20px; display:block; margin:0 auto;"/>
+
+
+<div class="container">
+
+
+<div class="col-lg-3">&nbsp;</div>
+
+ <div class="box col-lg-6">
+        <form style="color:#686e79; background:#fff; padding:10px; font-weight:normal;">
+        <label class="text-center"><h4 style="color:#2a457d; font-weight:400;">VERIFY YOUR MOBILE NUMBER</h4></label>
+          <div class="form-group">
+            <label for="email">Enter your Mobile Number</label>
+            <input type="text" class="form-control" id="txt1">
+          </div>
+          <!--<div class="checkbox text-right">
+            <label><input type="checkbox"> </label>
+            <a href="#" style="color:#4a75d0; padding-left: 0px !important;"><u>Resend OTP</u></a>
+          </div>-->
+
+         <!-- hide the below div when clicking the "get otp" button-->
+          <div class="form-group" id="mydiv">
+            <label for="pwd">Enter OTP</label>
+            <input type="text" class="form-control" id="txt2">
+          </div>
+
+          
+          <div class="row">
+          <div class="col-lg-4"><!--
+            <button type="button">Get OTP</button>-->
+            <input class="btn btn-block btn-danger" id="btnPassport" type="button" value="Submit"/>
+          </div>
+          </div>
+       </form>
+    </div>
+
+
+<div class="col-lg-3">&nbsp;</div>
+
+ </div>
+
+
+<div class="container text-center">   
+    <p>&nbsp;</p>
+</div>
+
+
+<div class="container-fluid text-center" style="position:fixed; color:#fff; bottom:0; width:100%; font-size:12px;background:#012061;">
+  Copyright © 2021 Emsyne Cowid Portal. All Rights Reserved.
+</div>
+
+
+
+<script type="text/javascript">
+    function ShowHideDiv(btnPassport) {
+        var dvPassport = document.getElementById("mydiv");
+        if (btnPassport.value == "Get OTP") {
+            dvPassport.style.display = "block";
+            btnPassport.value = "Verify OTP";
+            btnPassport.type= "submit";
+        } else {
+            dvPassport.style.display = "none";
+            btnPassport.value = "Loading...";
+        }
+    }
+</script>
+
+</body>
+
+<script type="text/javascript" src="{%static 'js/bootstrap.min.js' %}"></script>
+
+</html>

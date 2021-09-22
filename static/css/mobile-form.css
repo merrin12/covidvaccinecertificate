@@ -1,0 +1,70 @@
+﻿
+.bg{background: #fff url("../images/bg.jpg") center top no-repeat;}
+
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #161d2b;
+      padding: 15px;
+      color: #3b4456;
+    }
+    
+    label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+    
+/*gopi*/
+
+.navbar-inverse {
+    background-color: transparent; 
+    border-color: transparent
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #132026; /*#dc143c*/
+    border-color:#132026; 
+}
+
+.btn-danger:hover {
+    transition: 1s;
+    color: #333;
+    background-color: #ffb300;
+    border-color: #ffb300;
+}
+
+.btn-danger.focus, .btn-danger:focus {
+    color: #fff;
+    background-color: #132026;
+    border-color: #132026;
+}
+
+.btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover {
+    color: #fff;
+    background-color: #ffb300;
+    border-color: #ffb300;
+}
+
+a:hover{text-decoration:none; color:#fff;}
+.box{background:#eee; padding:25px; border:1px solid #b9b9b9; 
+     box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;}
+
+.jumb-top{margin-top:50px;}
+.jumbotron{padding:0px; border-bottom:1px solid #eee;}
+

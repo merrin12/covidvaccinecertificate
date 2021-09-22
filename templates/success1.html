@@ -1,0 +1,69 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Download Successful</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/mobile-form.css' %}">
+
+
+</head>
+<body class="bg img-responsive">
+
+<img src="{% static 'images/crtfcte.png' %}" class="img-responsive" style="position:relative; padding-top:70px; padding-bottom:20px; display:block; margin:0 auto;"/>
+
+
+<div class="container">
+
+
+<div class="col-lg-3">&nbsp;</div>
+
+ <div class="box col-lg-6">
+        <form style="color:#686e79; background:#fff; padding:10px; font-weight:normal;">
+        <img src="{% static 'images/tik.png' %}" style="padding-top:70px; padding-bottom:20px; display:block; margin:0 auto;"/>
+        <h3 style="color:#4b4b4b; font-weight:400; text-align:center; margin:0 auto;"><label>Download Successful</label></h3>
+          <div class="form-group">
+            <div style="font-weight:400; text-align:center;"><label>The Covid Certificate was Successfully Downloaded</label></div>
+          </div>
+         
+       </form>
+    </div>
+
+
+<div class="col-lg-3">&nbsp;</div>
+ </div>
+
+
+<div class="container text-center">   
+    <p>&nbsp;</p>
+</div>
+
+
+<div class="container-fluid text-center" style="position:fixed; color:#fff; bottom:0; width:100%; font-size:12px;background:#012061;">
+  Copyright © 2021 Emsyne Cowid Portal. All Rights Reserved.
+</div>
+
+
+
+<script type="text/javascript">
+    function ShowHideDiv(btnPassport) {
+        var dvPassport = document.getElementById("mydiv");
+        if (btnPassport.value == "Get OTP") {
+            dvPassport.style.display = "block";
+            btnPassport.value = "Verify OTP";
+        } else {
+            dvPassport.style.display = "none";
+            btnPassport.value = "Loading...";
+        }
+    }
+</script>
+
+</body>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</html>
